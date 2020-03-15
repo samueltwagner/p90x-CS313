@@ -1,0 +1,36 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Project title / one sentence description:
+
+P90X Web App / Meant to help users track workouts while completing the programming
+
+2. Copy and paste the URL for your site at Heroku:
+
+https://stark-wildwood-48906.herokuapp.com/
+
+
+3. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+https://github.com/samueltwagner/p90x-CS313
+
+
+4. Describe the component that you completed from end-to-end:
+
+Completed portions of the user interface.
+
+5. Please select the category you feel best describes your assignment:
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+2 or 3
+
+6. Provide a brief justification (1-2 sentences) for selecting that category.
+
+I have the database and server file logically correct. I need to deploy the mongodb and polish the frontend. 
+
+7. Please list any questions you have for the instructor regarding this assignment or this week's topic.
+
+I ran into a lot of issues using PosGresql on my mac. I could not authenticate myself as the local superuser. I decided to pursue mongodb.
