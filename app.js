@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const app = express();
 const port = process.env.PORT || 5000;
 const {MongoClient} = require('mongodb');
 
@@ -58,7 +59,7 @@ function calculateWeight(request, response) {
 
 function computeLoss(startWeight, currentWeight) {
   const params = {startWeight: startWeight, currentWeight:currentWeight};
-	response.render('pages/result', params);
+	response.render('views/pages/result', params);
 }
 
 main().catch(console.error);
