@@ -23,7 +23,7 @@ app.listen(port, function() {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.sendFile(path.join(__dirname, 'p90x/index.html'));
+  res.sendFile(path.join(__dirname, 'p90x/app.js'));
 });
 
 async function main(){
