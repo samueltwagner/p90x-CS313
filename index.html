@@ -1,12 +1,143 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>P90X</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>P90X</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+	<h1>P90X Program</h1>
+	  <!-- Block 1 -->
+	  <div class="block">
+		<p>
+			<a class="btn btn-primary" data-toggle="collapse" href="#block1" role="button" aria-expanded="false" aria-controls="collapseExample">
+			  Block 1
+			</a>
+		  </p>
+		  <div class="collapse" id="block1">
+			<div class="card card-body">
+			 <!-- Fill this with Workout List -->
+			 <table>
+				<tr>
+				  <th></th>
+				  <th>Monday</th>
+				  <th>Tuesday</th>
+				  <th>Wednesday</th>
+				  <th>Thursday</th>
+				  <th>Friday</th>
+				  <th>Saturday</th>
+				  <th>Sunday</th>
+				</tr>
+				<tr>
+				  <td>Week 1</td>	
+				  <!-- Workout 1 - 7 -->
+				</tr>
+				<tr>
+				  <td>Week 2</td>	
+				  <!-- Workout 8 - 14 -->
+				</tr>
+				<tr>
+				  <td>Week 3</td>	
+				  <!-- Workout 15 - 24 -->
+				</tr>
+				<tr>
+				  <td>Week 4</td>	
+				  <!-- Workout 25 - 32 -->
+				</tr>
+			  </table>
+			</div>
+		  </div>
+	  </div>
+	  <!-- Block 2 -->
+	  <div class="block">
+		<p>
+			<a class="btn btn-primary" data-toggle="collapse" href="#block2" role="button" aria-expanded="false" aria-controls="collapseExample">
+			  Block 2
+			</a>
+		  </p>
+		  <div class="collapse" id="block2">
+			<div class="card card-body">
+			 <!-- Fill this with Workout List -->
+			 <table>
+				<tr>
+				  <th></th>
+				  <th>Monday</th>
+				  <th>Tuesday</th>
+				  <th>Wednesday</th>
+				  <th>Thursday</th>
+				  <th>Friday</th>
+				  <th>Saturday</th>
+				  <th>Sunday</th>
+				</tr>
+				<tr>
+				  <td>Week 5</td>	
+				</tr>
+				<tr>
+				  <td>Week 6</td>	
+				</tr>
+				<tr>
+				  <td>Week 7</td>	
+				</tr>
+				<tr>
+				  <td>Week 8</td>	
+				</tr>
+			  </table>
+			</div>
+		  </div>
+	  </div>
+	  <!-- Block 3 -->
+	  <div class="block">
+		<p>
+			<a class="btn btn-primary" data-toggle="collapse" href="#block3" role="button" aria-expanded="false" aria-controls="collapseExample">
+			  Block 3
+			</a>
+		  </p>
+		  <div class="collapse" id="block3">
+			<div class="card card-body">
+			 <!-- Fill this with Workout List -->
+			 <table>
+				<tr>
+				  <th></th>
+				  <th>Monday</th>
+				  <th>Tuesday</th>
+				  <th>Wednesday</th>
+				  <th>Thursday</th>
+				  <th>Friday</th>
+				  <th>Saturday</th>
+				  <th>Sunday</th>
+				</tr>
+				<tr>
+				  <td>Week 9</td>	
+				</tr>
+				<tr>
+				  <td>Week 10</td>	
+				</tr>
+				<tr>
+				  <td>Week 11</td>	
+				</tr>
+				<tr>
+				  <td>Week 12</td>	
+				</tr>
+				<tr>
+				  <td>Week 13</td>	
+				  </tr>
+			  </table>
+			</div>
+		  </div>
+	  </div>
+    <form action="/weight" method="get">
+        <label>Starting Weight:</label>
+        <input type="text" name="startWeight">
+		<label>Current Weight:</label>
+        <input type="text" name="currentWeight">
+		<br><br>
+		<input type="submit" value="Get Result">
+	</form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 </html>

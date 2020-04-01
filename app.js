@@ -1,13 +1,16 @@
-var express = require('express');
-var router = express.Router();
-const app = express();
-const port = process.env.PORT || 5000;
 const {MongoClient} = require('mongodb');
+const express = require('express');
+const app = express();
+const router = express.Router();
+
+const port = process.env.PORT || 5000;
+
+
 
 // tell it to use the public directory as one where static files live
 app.use(express.static(__dirname + '/public'));
 
-// views is directory for all template files
+// views is directory for all ejs files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
@@ -42,34 +45,31 @@ async function main(){
       await client.close();
   }
 
-  async function listDatabases(client){
-    databasesList = await client.db().admin().listDatabases();
-  
-    console.log("Databases:");
-    databasesList.databases.forEach(db => console.log(` - ${db.name}`));
-  };
 }
-
-function calculateWeight(request, response) {
-	const startWeight = request.query.startWeight;
-	const currentWeight = Number(request.query.currentWeight);
-
-	computeLoss(startWeight, currentWeight);
-}
-
-function computeLoss(startWeight, currentWeight) {
-  const params = {startWeight: startWeight, currentWeight:currentWeight};
-	response.render('views/pages/result', params);
-}
-
-main().catch(console.error);
 
 module.exports = router;
 
 
 
 
+// function calculateWeight(request, response) {
+// 	const startWeight = request.query.startWeight;
+// 	const currentWeight = Number(request.query.currentWeight);
+
+// 	computeLoss(startWeight, currentWeight);
+// }
+
+// function computeLoss(startWeight, currentWeight) {
+//   const params = {startWeight: startWeight, currentWeight:currentWeight};
+// 	response.render('views/pages/result', params);
+// }
+
+// main().catch(console.error);
 
 
+// async function listDatabases(client){
+//   databasesList = await client.db().admin().listDatabases();
 
-
+//   console.log("Databases:");
+//   databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+// };
