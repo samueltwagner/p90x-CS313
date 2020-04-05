@@ -1,5 +1,5 @@
 {
-  "name": "cms",
+  "name": "p90x",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -32,7 +32,7 @@
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.901.0",
+    "@angular-devkit/build-angular": "^0.803.24",
     "@angular/cli": "~8.3.5",
     "@angular/compiler-cli": "~8.2.7",
     "@angular/language-service": "~8.2.7",

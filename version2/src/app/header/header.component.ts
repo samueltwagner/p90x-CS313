@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 
 @Component({
-  selector: 'cms-header',
+  selector: 'p90x-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })

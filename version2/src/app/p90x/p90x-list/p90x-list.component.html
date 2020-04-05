@@ -1,0 +1,38 @@
+<div class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="row">
+              <span class="title pad-left-right">Search Workout</span>
+            </div>
+            <div class="row">
+              <div class="input-group pull-left pad-left-right col-xs-7">
+                <input
+                 type="text" 
+                 #searchBox 
+                 (keyup)="onKeyPress(searchBox.value)"
+                 class="form-control"
+                 placeholder="Enter search value">
+                <!-- <div class="glyphicon glyphicon glyphicon-search input-group-addon" (click)="search(searchBox.value)"></div> -->
+              </div>
+              <div class="pull-right pad-left-right">
+                <a class="btn btn-success" [routerLink]="['new']">New Workout</a>
+              </div>
+            </div>
+        </div>       
+        <div class="panel-body">
+            Workout List
+            <p90x-item 
+            *ngFor="let workout of workouts | workoutFilter: term" 
+            [workout]="workout" 
+            dnd-draggable
+            [dragEnabled]="true"
+            [dragData]="workout"
+            [dropZones]="['workoutGroup']">
+            </p90x-item>
+            <!-- <cms-workout-item *ngFor="let workout of workouts" 
+            [workout]="workout"
+            (click)="onSelected(workout)"></cms-workout-item> -->
+        </div>
+    </div>
+</div>
+

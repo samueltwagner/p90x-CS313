@@ -11,13 +11,11 @@ var app = express();
 // import the routing file to handle the default (index) route
 var index = require('./server/routes/app');
 
-const messageRoutes = require('./server/routes/messages');
-const contactRoutes = require('./server/routes/contacts');
-const documentsRoutes = require('./server/routes/documents');
+const workoutsRoutes = require('./server/routes/workouts');
 
 //establish a connection to the mongo database to those used by your database
-mongoose.connect('mongodb://localhost:27017/cmsDB',
-{ useNewUrlParser: true }, (err, res) => {
+mongoose.connect('mongodb+srv://admin:Password1234@p90x-xaviq.mongodb.net/test?retryWrites=true&w=majority',
+{ useNewUrlParser: true, useUnifiedTopology: true  }, (err, res) => {
   if (err){
     console.log('Connection failed' + err);
   }
@@ -52,9 +50,7 @@ app.use(express.static(path.join(__dirname, 'dist/cms')));
 
 app.use('/', index);
 
-app.use('/messages', messageRoutes);
-app.use('/contacts', contactRoutes);
-app.use('/documents', documentsRoutes);
+app.use('/workouts', workoutsRoutes);
 
 // Tell express to map all other non-defined routes back to the index page
 app.get('*', (req, res) => {

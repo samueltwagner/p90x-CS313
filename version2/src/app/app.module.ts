@@ -3,49 +3,28 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { ContactsComponent } from './contacts/contacts.component';
-import { ContactListComponent } from './contacts/contact-list/contact-list.component';
-import { ContactsDetailComponent } from './contacts/contacts-detail/contacts-detail.component';
-import { ContactItemComponent } from './contacts/contact-item/contact-item.component';
+import { p90xComponent } from './p90x/p90x.component';
+import { p90xListComponent } from './p90x/p90x-list/p90x-list.component';
+import { p90xDetailComponent } from './p90x/p90x-detail/p90x-detail.component';
+import { p90xItemComponent } from './p90x/p90x-item/p90x-item.component';
 import { DropdownDirective } from './dropdown.directive';
-import { DocumentsComponent } from './documents/documents.component';
-import { DocumentListComponent } from './documents/document-list/document-list.component';
-import { DocumentItemComponent } from './documents/document-item/document-item.component';
-import { DocumentDetailComponent } from './documents/document-detail/document-detail.component';
-import { MessagesComponent } from './messages/messages.component';
-import { MessageEditComponent } from './messages/message-edit/message-edit.component';
-import { MessageItemComponent } from './messages/message-item/message-item.component';
-import { MessageListComponent } from './messages/message-list/message-list.component';
 import { AppRoutingModule } from './app-routing.module';
-import { DocumentViewComponent } from './documents/document-view/document-view.component';
-import { DocumentEditComponent } from './documents/document-edit/document-edit.component';
-import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
-
+import { p90xEditComponent } from './p90x/p90x-edit/p90x-edit.component';
 import { DndModule } from 'ng2-dnd';
-import { ContactsFilterPipe } from './contacts/contacts-filter.pipe';
+import { workoutFilterPipe } from './p90x/workouts-filter.pipe';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContactsComponent,
-    ContactListComponent,
-    ContactsDetailComponent,
-    ContactItemComponent,
+    p90xComponent,
+    p90xListComponent,
+    p90xDetailComponent,
+    p90xItemComponent,
     DropdownDirective,
-    DocumentsComponent,
-    DocumentListComponent,
-    DocumentItemComponent,
-    DocumentDetailComponent,
-    MessagesComponent,
-    MessageItemComponent,
-    MessageEditComponent,
-    MessageListComponent,
-    DocumentViewComponent,
-    DocumentEditComponent,
-    ContactEditComponent,
-    ContactsFilterPipe
+    p90xEditComponent,
+    workoutFilterPipe
   ],
   imports: [
     BrowserModule,

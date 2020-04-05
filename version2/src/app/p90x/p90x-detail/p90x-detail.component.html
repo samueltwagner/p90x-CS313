@@ -1,0 +1,18 @@
+<div class="panel-group">
+    <div class="panel panel-default">
+        <div class="panel-heading"> 
+            <h4><strong> {{workout?.name}}</strong></h4>   
+            <a class="btn btn-info pull-right" style="margin: 2px" [routerLink]="['/workout' , workout?.id, 'edit']">Edit</a>
+            <a class="btn btn-danger pull-right" style="margin: 2px" (click)="onDelete()">Delete</a>
+            <img [src]="workout.imageUrl" alt="{{workout.name}}" class="img-responsive">
+        </div>          
+        <div class="panel-body">
+            <p><strong>Email: </strong> {{workout?.email}}</p>
+            <p><strong>Phone: </strong> {{workout?.phone}}</p>
+        </div>
+        <div class="panel-body" *ngFor="let groupWorkout of workout?.group">
+            <div>{{ groupWorkout?.name }}</div>
+            <div>{{ groupWorkout?.email }}</div>
+        </div>
+    </div>
+</div>
