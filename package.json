@@ -1,6 +1,10 @@
 {
   "name": "p90x",
   "version": "0.0.0",
+  "engines": {
+    "node": "10.16.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,11 +18,12 @@
     "@angular/animations": "~8.2.7",
     "@angular/common": "~8.2.7",
     "@angular/compiler": "~8.2.7",
-    "@angular/core": "~8.2.7",
+    "@angular/core": "^5.2.11",
     "@angular/forms": "~8.2.7",
     "@angular/platform-browser": "~8.2.7",
     "@angular/platform-browser-dynamic": "~8.2.7",
     "@angular/router": "~8.2.7",
+    "@babel/compat-data": "^7.8.0",
     "body-parser": "^1.19.0",
     "bootstrap": "^3.4.1",
     "cookie-parser": "^1.4.4",
@@ -27,6 +32,9 @@
     "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.9.1",
     "ng2-dnd": "^5.0.2",
+    "node": "^13.12.0",
+    "of": "^1.0.0",
+    "peer": "^0.5.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
@@ -36,6 +44,8 @@
     "@angular/cli": "~8.3.5",
     "@angular/compiler-cli": "~8.2.7",
     "@angular/language-service": "~8.2.7",
+    "@babel/cli": "~7.8.4",
+    "@babel/core": "~7.9.0",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -51,5 +61,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.5.5"
   }
 }
